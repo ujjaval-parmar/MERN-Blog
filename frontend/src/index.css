@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    /* height: 100vh; */
+}
+
+.ql-editor{
+    font-size: 1.05rem;
+    
+}
+
+.post-content p{
+    margin-bottom: 0.5rem;
+}
+
+.post-content h2{
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+
+.post-content pre{
+    background: black;
+    color: white;
+    padding: 0.8rem;
+}
+
+.post-content a{
+    color: rgb(73, 149, 199);
+    text-decoration: none;
+}
+
+.post-content a:hover{
+    text-decoration: underline;
+}
+
+/* .dark .post-content a{
+    
+    color: 
+} */
