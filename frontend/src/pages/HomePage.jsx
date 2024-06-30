@@ -13,7 +13,7 @@ const HomePage = () => {
 
     const getRecentPosts = async () => {
       try {
-        const response = await fetch(`/api/post/get-posts?sortDirection=dsc&limit=9`, {
+        const response = await fetch(`/api/post/get-posts?order=desc&limit=9`, {
           method: "GET",
           credentials: 'include',
           "Access-Control-Allow-Origin": "*",
@@ -42,7 +42,7 @@ const HomePage = () => {
 
   }, []);
 
-  console.log(posts);
+  // console.log(posts);
 
   const handleShowMore = async () => {
     const startIndex = posts.length;

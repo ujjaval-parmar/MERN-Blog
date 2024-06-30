@@ -14,6 +14,7 @@ import CreatePost from "./pages/CreatePost"
 import UpdatePost from "./pages/UpdatePost"
 import PostPage from "./pages/PostPage"
 import ScrollToTop from "./components/ScrollToTop"
+import Search from "./pages/Search"
 
 
 
@@ -34,13 +35,12 @@ function App() {
 
         <Route path='/' element={<HomePage />} />
 
-
         <Route path='/post/:postSlug' element={<PostPage />} />
-
 
         <Route path='/about' element={<AboutPage />} />
         <Route path='/sign-in' element={<SignInPage />} />
         <Route path='/sign-up' element={<SignUpPage />} />
+        <Route path='/search' element={<Search />} />
 
         <Route element={<PrivateRoute />}>
 
@@ -58,7 +58,7 @@ function App() {
         </Route>
 
 
-      <Route path="*" element={<NotFoundPage />} />
+        <Route path="*" element={<NotFoundPage />} />
 
 
 

@@ -50,7 +50,9 @@ export const getPosts = async (req, res, next) => {
 
         const sortDirection = req.query.order === 'asc' ? 1 : -1;
 
-        // console.log(req.userId);
+        req.query.category = req.query.category === 'uncategorized' ? undefined : req.query.category;
+
+        // console.log(req.query);
 
         const posts = await PostModel.find({
             ...(req.query.userId) && { userId: req.query.userId },
